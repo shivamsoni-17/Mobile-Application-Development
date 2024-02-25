@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#293b97"
+    tools:context=".SignUpActivity">
+    <EditText
+        android:id="@+id/userEmail"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/button_format"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+         />
+
+    <EditText
+        android:id="@+id/passWord"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/button_format"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:layout_gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/reEnterPassWord"
+        android:layout_width="300dp"
+        android:padding="10dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="reenter password"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/button_format"
+        android:inputType="textPassword"
+        android:layout_gravity="center" />
+
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:autoSizeMaxTextSize="20sp"
+        android:autoSizeTextType="uniform"
+        android:text="SIGN UP"
+        android:background="@drawable/button_selector_test"
+        android:textColor="@color/white"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/loginPageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Already Registered? Login Here"
+        android:textColor="@color/white"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/forgotPasswordActivityLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="300dp"
+        android:text="Forgot Password? Click Here"
+        android:textColor="@color/white"
+        android:layout_gravity="center"/>
+</LinearLayout>
