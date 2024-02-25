@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Sahayta</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="swipe_left_for_register">Swipe Left for Register</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="e_mail">Email</string>
+    <string name="tag">Access all areas\: \nUnlocking Welfare\'s Potential</string>
+    <string name="swipe_right_for_login">Swipe Right for Login</string>
+    <string name="register">Register</string>
+    <string name="re_type_password">Re-type Password</string>
+    <string name="your_name">Full Name</string>
+    <string name="title_activity_dashboard">dashboard</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string-array name="complaint_item">
+        <item>Littering</item>
+        <item>Electricity Department</item>
+        <item>Corruption Related</item>
+        <item>Potholes—Repair of Potholes</item>
+        <item>Other</item>
+    </string-array>
+
+</resources>

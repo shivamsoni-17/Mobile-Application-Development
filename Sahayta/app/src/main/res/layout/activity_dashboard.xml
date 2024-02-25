@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Bottom Navigation -->
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="44dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_welcome_message"
+                android:layout_width="249dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/indigo_daisy"
+                android:text="Welcome!"
+                android:textSize="56sp" />
+
+            <!-- Quick Action Buttons -->
+
+            <TextView
+                android:id="@+id/userid"
+                android:layout_width="337dp"
+                android:layout_height="83dp"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/indigo_daisy"
+                android:hint="UserID"
+                android:textSize="25sp" />
+
+            <GridLayout
+                android:id="@+id/myGridLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:columnCount="1"
+                android:orientation="horizontal"
+                android:rowCount="4"
+                android:background="@color/material_dynamic_neutral95">
+
+                <Button
+                    android:id="@+id/btn_find_hospital"
+                    android:layout_width="310dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="18dp"
+                    style="@style/ButtonStyle"
+                    android:text="Find Hospital" />
+
+                <Button
+                    android:id="@+id/btn_file_complaint"
+                    android:layout_width="310dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="18dp"
+                    style="@style/ButtonStyle"
+                    android:text="File Complaint" />
+
+                <Button
+                    android:id="@+id/btn_1"
+                    style="@style/ButtonStyle"
+                    android:layout_width="310dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="18dp"
+                    android:text="Emergency Services"/>
+
+                <Button
+                    android:id="@+id/btn_2"
+                    android:layout_width="310dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="18dp"
+                    style="@style/ButtonStyle"
+                    android:text="Campaigns"/>
+
+            </GridLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_navigation_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

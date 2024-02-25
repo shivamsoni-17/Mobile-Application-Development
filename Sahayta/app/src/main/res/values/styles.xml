@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Base theme customization -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Extension of BaseAppTheme without an action bar -->
+    <style name="AppTheme.NoActionBar" parent="BaseAppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="TextBoxStyle" parent="BaseAppTheme">
+        <item name="android:padding">15dp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:background">@drawable/et_custom</item>
+    </style>
+
+    <style name="ButtonStyle" >
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/btn_custom</item>
+    </style>
+</resources>
